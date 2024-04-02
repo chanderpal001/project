@@ -20,7 +20,7 @@ regressor.fit(X,Y)
 
 # Predicting a new result with the Random Forest Regression
 
-Y_Pred = regressor.predict(6.5)
+Y_Pred = regressor.predict(np.array(6.5).reshape(-1,1))
 
 # Visualising the Random Forest Regression results in higher resolution and smoother curve
 X_Grid = np.arange(min(X), max(X), 0.01)
